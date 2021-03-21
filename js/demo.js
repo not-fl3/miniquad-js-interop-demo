@@ -23,5 +23,5 @@ function perform_demo() {
   // call rust function returning a string
   var rust_object = wasm_exports.get_demo_string();
 
-  console.log(from_js_object(rust_object)); // ensure that this is a string
+  console.log(consume_js_object(rust_object)); // ensure that this is a string
 };
